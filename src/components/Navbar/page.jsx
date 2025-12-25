@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import DarkModeToggle from "../DarkMode";
+import DarkModeToggle from "../ui/DarkMode";
 import { Menu, X } from "lucide-react";
-import { Activity, useState } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,12 +52,12 @@ const Navbar = () => {
       </div>
 
       {/* Backdrop */}
-      <Activity mode={isMenuOpen ? "visible" : "hidden"}>
+      {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-60 md:hidden"
           onClick={closeMenu}
         />
-      </Activity>
+      )}
 
       {/* Off-canvas Mobile Menu */}
       <div

@@ -16,11 +16,8 @@
 @theme {
   --color-flame: #ffba08;
   --color-space-indigo: #161739;
-  --color-heading: #45df55;
+  --color-purple: #592ea9;
   --color-surface: #1f2933;
-  --color-brand: #ec4899;
-  --color-brand-dark: #be185d;
-  --color-brand-soft: #fbcfe8;
 }
 
 body {

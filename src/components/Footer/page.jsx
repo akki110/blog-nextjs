@@ -18,12 +18,12 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-space-indigo text-white py-10">
+    <footer className="bg-space-indigo text-white py-10 md:py-20">
       <div className="w-11/12 mx-auto">
         {/* Links */}
-        <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold">MindSpill</div>
-          <div className="flex items-center gap-5">
+        <div className="flex flex-col items-start md:flex-row justify-between md:items-center">
+          <div className="text-2xl font-bold mb-5 md:mb-0">MindSpill</div>
+          <div className="flex flex-wrap items-center gap-2 md:gap-10">
             {links.map((link) => (
               <Link key={link.name} href={link.link}>
                 {link.name}
@@ -33,16 +33,16 @@ const Footer = () => {
         </div>
 
         {/* Newsletter */}
-        <div className="my-14 bg-white/10 h-56 flex items-center justify-between">
+        <div className="my-14 bg-white/10 h-56 flex items-center justify-center md:justify-between">
           <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col gap-2 items-start">
-              <h2 className="text-3xl font-bold max-w-xl">
+              <h2 className="text-xl md:text-3xl font-bold max-w-xl">
                 Subscribe to our news letter to get latest updates and news
               </h2>
             </div>
             <div className="flex items-center justify-end gap-2">
               <input
-                className="border border-flame/60 px-4 py-3 w-96 focus:border-flame/60 focus:outline-none text-flame"
+                className="border border-flame/60 px-4 py-3 w-full md:w-96 focus:border-flame/60 focus:outline-none text-flame"
                 type="email"
                 placeholder="Enter your email"
               />
@@ -54,12 +54,12 @@ const Footer = () => {
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-between items-center">
-          <div className="flex flex-col gap-2 text-start text-white/80">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2">
+          <div className="w-full flex flex-row justify-between md:justify-start gap-2 text-start text-white/80">
             <p>© 2025 MindSpill. All rights reserved.</p>
             <p>Hello@mindspill.com +91 1234567890</p>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="w-full flex items-center justify-center md:justify-end gap-5 mt-5 md:mt-0">
             {socialLinks.map((link) => (
               <Link
                 key={link.name}
