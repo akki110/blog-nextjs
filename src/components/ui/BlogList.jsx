@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const BlogList = ({ image, title, description, category, link }) => {
+const BlogList = ({ image, title, description, category, link = "" }) => {
   return (
     <Link href={link} className="group">
       <div className="w-full bg-transparent flex flex-col md:flex-row items-start md:items-center gap-5 mb-5 group-hover:bg-gray-50 dark:group-hover:bg-gray-800 transition-all duration-300">
