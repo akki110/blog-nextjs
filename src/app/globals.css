@@ -14,7 +14,7 @@
 }
 
 @theme {
-  --color-flame: #ffba08;
+  --color-flame: #edc14a;
   --color-space-indigo: #161739;
   --color-purple: #592ea9;
   --color-surface: #1f2933;
@@ -23,6 +23,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-get-sen);
   transition: background 0.3s ease, color 0.3s ease;
 }

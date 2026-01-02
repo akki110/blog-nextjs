@@ -5,7 +5,7 @@ const ReusableLink = ({ href, text, isArrowRight = false }) => {
   return (
     <Link
       href={href}
-      className="text-surface font-semibold bg-flame px-4 py-2.5 inline-flex items-center justify-center w-fit"
+      className="text-surface text-[14px] font-semibold bg-flame px-4 py-2.5 hover:bg-flame/80 transition-all ease-in-out inline-flex items-center justify-center w-fit"
     >
       {text}
       {isArrowRight && <ArrowRight className="ml-1 w-4 h-4" />}

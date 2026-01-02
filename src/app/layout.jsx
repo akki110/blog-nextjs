@@ -1,17 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Sen } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar/page";
 import Footer from "../components/Footer/page";
 import Providers from "./Providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const getSen = Sen({
+  variable: "--font-get-sen",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -22,9 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${getSen.variable} antialiased`}>
         <Providers>
           <Navbar />
           <div className="min-h-screen mt-14">{children}</div>
