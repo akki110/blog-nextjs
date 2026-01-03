@@ -222,16 +222,21 @@ const Home = () => {
 
       {/* Category List */}
       <div className="w-full h-full flex justify-center items-center py-8 md:py-16">
-        <div className="w-full md:w-11/12 px-5 md:px-0 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 md:gap-10">
-          {categoryList.map((category) => (
-            <CategoryCard
-              key={category.title}
-              title={category.title}
-              description={category.description}
-              icon={category.icon}
-              isCategoryPage={false}
-            />
-          ))}
+        <div className="w-full md:w-11/12 px-5 md:px-0 flex flex-col items-center gap-5 md:gap-10">
+          <h2 className="text-surface dark:text-white text-center text-md md:text-2xl font-bold tracking-wider w-full md:w-10/12">
+            Choose Categories
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 md:gap-10">
+            {categoryList.map((category) => (
+              <CategoryCard
+                key={category.title}
+                title={category.title}
+                description={category.description}
+                icon={category.icon}
+                isCategoryPage={false}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
