@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 const ReusableLink = ({ href, text, isArrowRight = false }) => {
   return (
@@ -8,7 +8,7 @@ const ReusableLink = ({ href, text, isArrowRight = false }) => {
       className="text-surface text-[14px] font-semibold bg-flame px-4 py-2.5 hover:bg-flame/80 transition-all ease-in-out inline-flex items-center justify-center w-fit"
     >
       {text}
-      {isArrowRight && <ArrowRight className="ml-1 w-4 h-4" />}
+      {isArrowRight && <ChevronRight className="ml-1 w-4 h-4" />}
     </Link>
   );
 };
