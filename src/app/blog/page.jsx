@@ -6,9 +6,12 @@ import {
   BrainCircuit,
   Building2,
   ChartNoAxesCombined,
+  ChevronLeft,
+  ChevronRight,
   Rocket,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Blog = () => {
   const blogList = [
@@ -105,6 +108,20 @@ const Blog = () => {
             {blogList.map((data, i) => (
               <BlogList {...data} key={i} />
             ))}
+            <div className="flex items-center justify-center gap-4">
+              <Link
+                href="/blog"
+                className="text-surface dark:text-white disabled:text-gray-400 flex items-center text-md"
+              >
+                <ChevronLeft className="w-4 h-4" /> Previous
+              </Link>
+              <Link
+                href="/blog"
+                className="text-surface dark:text-white flex items-center text-md font-bold"
+              >
+                Next <ChevronRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

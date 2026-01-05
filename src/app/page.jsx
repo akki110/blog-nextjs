@@ -289,7 +289,7 @@ const Home = () => {
             <div ref={emblaRef} className="overflow-hidden relative">
               <div className="flex">
                 {testimonial.map((item, i) => (
-                  <div className="min-w-full">
+                  <div className="min-w-full" key={i}>
                     <p className="w-full md:w-10/12 text-surface dark:text-white text-md md:text-xl font-bold">
                       {item.description}
                     </p>
