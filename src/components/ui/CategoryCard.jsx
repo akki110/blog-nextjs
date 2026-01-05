@@ -3,9 +3,9 @@ const CategoryCard = ({ title, description, icon, isCategoryPage = false }) => {
     <div
       className={`w-full border border-gray-300 hover:bg-flame/80 hover:border-flame/80 hover:cursor-pointer group flex ${
         !isCategoryPage
-          ? "flex-col items-start min-h-48"
-          : "flex-row items-center h-16"
-      } justify-center gap-3 p-5`}
+          ? "flex-col p-5 justify-center items-start min-h-48"
+          : "flex-row p-10 justify-start items-center h-16 mb-5"
+      } gap-3`}
     >
       <div className="flex justify-center items-center bg-flame/20 p-2.5 rounded group-hover:bg-white dark:group-hover:text-surface">
         {icon}

@@ -1,14 +1,13 @@
+import Header from "@/components/ui/Header";
+
 const PrivacyPolicy = () => {
   return (
     <>
-      <div className="w-full h-64 bg-purple-50 flex flex-col justify-center items-center gap-2">
-        <h2 className="font-bold text-4xl text-surface dark:text-white">
-          Privacy Policy
-        </h2>
-        <p className="text-gray-500 text-sm dark:text-white">
-          Last Updated on 31 Dec 2025
-        </p>
-      </div>
+      <Header
+        title="Privacy Policy"
+        description="Last Updated on 31 Dec 2025"
+        isBreadCrumb={false}
+      />
 
       {/* Content */}
       <div className="flex justify-center items-start">
