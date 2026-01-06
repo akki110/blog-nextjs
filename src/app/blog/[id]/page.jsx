@@ -1,4 +1,4 @@
-import { Rocket } from "lucide-react";
+import { Rocket } from "@/lib/icons";
 import Image from "next/image";
 import Link from "next/link";
 

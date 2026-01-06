@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import DarkModeToggle from "../ui/DarkMode";
-import { Menu, X } from "lucide-react";
+import { Menu, X } from "@/lib/icons";
 import { useState } from "react";
 
 const Navbar = () => {

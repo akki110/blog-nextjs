@@ -6,7 +6,7 @@ import {
   Building2,
   ChartNoAxesCombined,
   Rocket,
-} from "lucide-react";
+} from "@/lib/icons";
 import Link from "next/link";
 
 const Category = () => {

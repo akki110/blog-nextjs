@@ -1,8 +1,8 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Navbar from "./Navbar/page";
-import Footer from "./Footer/page";
+import Navbar from "./user/Navbar";
+import Footer from "./user/Footer";
 
 export default function ConditionalLayout({ children }) {
   const pathname = usePathname();

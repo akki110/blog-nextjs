@@ -1,5 +1,5 @@
-const { ChevronRight } = require("lucide-react");
-const { default: Link } = require("next/link");
+import { ChevronRight } from "@/lib/icons";
+import Link from "next/link";
 
 const Header = ({ title, description, isBreadCrumb }) => {
   return (
