@@ -1,8 +1,7 @@
 import { Sen } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar/page";
-import Footer from "../components/Footer/page";
 import Providers from "./Providers";
+import ConditionalLayout from "../components/ConditionalLayout";
 
 const getSen = Sen({
   variable: "--font-get-sen",
@@ -20,9 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={`${getSen.variable} antialiased`}>
         <Providers>
-          <Navbar />
-          <div className="min-h-screen mt-14">{children}</div>
-          <Footer />
+          <ConditionalLayout>{children}</ConditionalLayout>
         </Providers>
       </body>
     </html>
