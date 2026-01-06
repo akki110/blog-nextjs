@@ -30,7 +30,7 @@ const AdminLayout = ({ children }) => {
 
   // For all other admin pages, render with full admin panel layout
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Admin Header */}
       <Navbar onMenuClick={toggleMobileSidebar} />
       <div className="flex">
@@ -41,7 +41,9 @@ const AdminLayout = ({ children }) => {
         />
 
         {/* Main Content */}
-        <main className="flex-1 p-4 lg:p-8">{children}</main>
+        <main className="flex-1 overflow-y-auto overflow-x-hidden p-4">
+          {children}
+        </main>
       </div>
       <Footer />
     </div>

@@ -14,6 +14,10 @@ import {
     Building2,
     ChartNoAxesCombined,
     Rocket,
+    UsersIcon,
+    MessageCircleMore,
+    SquarePen,
+    Trash2
 } from "lucide-react";
 
 
@@ -25,4 +29,8 @@ export {
     Building2,
     ChartNoAxesCombined,
     Rocket,
+    UsersIcon,
+    MessageCircleMore,
+    SquarePen,
+    Trash2
 };
