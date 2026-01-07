@@ -52,7 +52,7 @@ const AddAndEditModal = ({ open, onClose, onSubmit, editData }) => {
       <div
         onClick={(e) => e.stopPropagation()}
         className={`
-          relative bg-white w-full max-w-md rounded-2xl shadow-2xl
+          relative bg-white w-full max-w-md rounded-xl shadow-xl
           transition-all duration-300 ease-out
           ${
             open
