@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
       />
 
       {/* Content */}
-      <div className="flex justify-center items-start">
+      <div className="flex justify-center items-start py-10 md:py-16">
         <div className="w-10/12 flex flex-col gap-2">
           {/* Policy 1 */}
           <div className="p-5 flex flex-col gap-2">

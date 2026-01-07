@@ -1,6 +1,7 @@
 import {
     Menu, ChevronDown,
     ChevronRight,
+    ChevronLeft,
     ChevronUp,
     LayoutDashboard,
     Settings,
@@ -22,7 +23,7 @@ import {
 
 
 export {
-    Menu, ChevronDown, ChevronRight, ChevronUp, LayoutDashboard, Settings, Users, X,
+    Menu, ChevronDown, ChevronRight, ChevronLeft, ChevronUp, LayoutDashboard, Settings, Users, X,
     Facebook, Instagram, Linkedin, Twitter, Moon, Sun, ArrowLeftIcon,
     ArrowRightIcon,
     BrainCircuit,

@@ -94,7 +94,7 @@ const About = () => {
         {/* Mission and Vision */}
         <div className="w-full md:w-11/12 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 bg-purple/10 px-5 md:px-12 py-10 md:py-20">
           {missionandvision.map((item, i) => (
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4" key={i}>
               <h5 className="text-surface dark:text-white text-sm md:text-md font-medium tracking-wider uppercase">
                 {item.title}
               </h5>
